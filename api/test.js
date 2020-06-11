@@ -1,9 +1,9 @@
 let uu = require('url-unshort')();
 
 module.exports = (req, res) => {
-  const {url = 'http://goo.gl/HwUfwd' } = req.query
+  const {url = 'https://bit.ly/2Auha5dd' } = req.query
 
-  uu.expand('http://goo.gl/HwUfwd')
+  uu.expand(url)
   .then(url => {
     if (url) res.status(200).send(`Original url is: ${url}`);
     // no shortening service or an unknown one is used
