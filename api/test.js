@@ -1,7 +1,7 @@
 let uu = require('url-unshort')();
 
 module.exports = (req, res) => {
-  const {url = 'http://goo.gl/HwUfwd' } = req.query
+  const url  = req.query.url
 
   uu.expand(url)
   .then(url => {
