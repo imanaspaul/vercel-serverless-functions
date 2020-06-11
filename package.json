@@ -1,0 +1,11 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/imanaspaul/vercel-serverless-functions.git",
+  "author": "'Manas <imanaspaul@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "url-unshort": "^5.0.0"
+  }
+}
