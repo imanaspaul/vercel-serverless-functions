@@ -5,7 +5,7 @@ module.exports = (req, res) => {
 
   uu.expand(url)
   .then(url => {
-    if (url) res.status(200).send(`Original url is: ${url}`);
+    if (ourl) res.status(200).send(`Original url is: ${ourl}`);
     // no shortening service or an unknown one is used
     else res.status(404).send(`No shorten url found`);
   })
